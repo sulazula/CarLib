@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@../style/style.css"
+      fx:controller="pl.sulazula.autolib.controller.RepairFormController"
+      spacing="10" alignment="CENTER">
+
+    <Label style="-fx-alignment: center">CarLib INFO</Label>
+
+    <TextField fx:id="carNumberField" promptText="Car`s number"/>
+    <TextField fx:id="descField" promptText="Repair description"/>
+    <DatePicker fx:id="datePicker"/>
+    <Button text="Add repair info" onAction="#addRepair"/>
+
+    <Button fx:id="openAddFormButton" text="Add a car" onAction="#openAddFormScene"/>
+</VBox>
+

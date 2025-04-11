@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@../style/style.css"
+      fx:controller="pl.sulazula.autolib.controller.AddController" spacing="10" alignment="CENTER">
+
+    <Label fx:id="label1" style="-fx-alignment: center">Add a Car</Label>
+
+    <TextField fx:id="carModelField" promptText="Car Model"/>
+    <TextField fx:id="carYearField" promptText="Car Year"/>
+    <TextField fx:id="carNumberField" promptText="Car Number"/>
+    <Button text="Add Car" onAction="#addCar"/>
+    <Button text="Back" onAction="#goBack"/>
+</VBox>

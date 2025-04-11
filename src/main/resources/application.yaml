@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: carlib
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/carlib'
+    username: 'sulazula'
+    password: '123qwerty'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
