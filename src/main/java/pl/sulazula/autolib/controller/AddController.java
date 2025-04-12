@@ -56,9 +56,9 @@ public class AddController {
             throw new IllegalArgumentException("All fields must be filled.");
         }
 
-        if (!carService.checkIllegal(carNumber)) return;
+        if (!carService.checkIllegal(carNumber.toUpperCase())) return;
 
-        if (carService.checkIfCarExist(carNumber)) {
+        if (carService.checkIfCarExist(carNumber.toUpperCase())) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "Car already exists.");
             alert.showAndWait();
             return;

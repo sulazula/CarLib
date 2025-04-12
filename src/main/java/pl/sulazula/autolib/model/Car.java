@@ -19,6 +19,6 @@ public class Car {
     private int year;
     private String number;
 
-    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Repair> repairs;
 }
