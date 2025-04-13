@@ -9,9 +9,9 @@ CarLib to aplikacja do zarządzania informacjami o samochodach oraz naprawach. U
 
 - **Java 17** lub wyższa
 - **Apache Maven**
-- **PostgreSQL** jako baza danych
+- **PostgreSQL** jako baza danychż
 
 ## Uruchamianie
-
+### Należy wpisac w terminalu
 ```bash
 mvn clean javafx:run
